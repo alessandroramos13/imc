@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 
-.imc {
+.imcStyle {
     position: relative;
     top: 75px;
     background-color: rgb(16, 43, 100);
@@ -41,7 +41,7 @@
         width: 40%;
     }
 
-    .imc {
+    .imcStyle {
         width: 70%;
     }
 }
