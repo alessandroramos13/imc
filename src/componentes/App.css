@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap');
+
+body {
+    background-color: rgb(4, 27, 77);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.App h1 {
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+@media (max-width: 900px) {
+    .App h1 {
+       width: 70%;
+       font-size: 30px;
+       margin: auto; 
+    }
+}
