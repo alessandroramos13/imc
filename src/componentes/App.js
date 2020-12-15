@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <div className='App'>
                 <h1>Calculadora de IMC</h1>
-                <Buttons/>
+                <Buttons />
             </div>
         );
     }

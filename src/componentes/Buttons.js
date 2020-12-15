@@ -1,69 +1,47 @@
 import React, { Component } from 'react';
-import Output from './Output';
 import './Buttons.css';
 
-class Buttons extends Component {
+class Button extends Component {
 
     constructor() {
         super()
         this.state = {
             peso: '',
             altura: '',
-            imc: 0,
+            imc: '',
         }
-
     }
 
     setPeso = (e) => {
-        this.setState({ peso: e.target.value })
+        this.setState({peso: e.target.value})
     }
 
     setAltura = (e) => {
-        this.setState({ altura: e.target.value })
+        this.setState({altura: e.target.value})
     }
 
     setIMC = () => {
         let resultado = Number(this.state.peso) / (Number(this.state.altura) * Number(this.state.altura))
-        this.setState({ peso: '', altura: '', imc: resultado })
-        return (
-            <Output />
-        )
-
+        this.setState({imc: resultado})
+        alert(`O seu IMC é de ${resultado.toFixed(2)}`)
     }
 
     render() {
-        if (this.state.peso !== '' && this.state.altura !== '') {
-            return (
-                <div>
-                    <div className='bt'>
-                        <input type="number" className='bt_peso' value={this.state.peso} placeholder={'Peso (em kg)'} onChange={this.setPeso} />
-                        <input type="number" className='bt_altura' value={this.state.altura} placeholder={'Altura (em m)'} onChange={this.setAltura} />
-                        <br />
-                        <input type="submit" className='calc' value="Calcular" onClick={this.setIMC} />
-                        <div className='imcStyle'>
-                            <Output imcState={this.state.imc} />
-                            p
-                        </div>
-                    </div>
+
+        return(
+            <div>
+                <div className="input" >
+                    <input type="number" value={this.state.peso} placeholder="Peso (em kg)" onChange={this.setPeso} />
+                    <input type="number" value={this.state.altura} placeholder="Altura (em m)" onChange={this.setAltura} />
+                    <br/>
+                    {this.state.peso !== '' && this.state.altura !== '' ? <input type="submit" value="Calcular" className="calcular" onClick={this.setIMC} /> : <input type="submit" className="calcularDisabled" disabled value="Calcular" />}
                 </div>
-            );
-        }
-        else {
-            return (
-                <div>
-                    <div className='bt'>
-                        <input type="number" className='bt_peso' value={this.state.peso} placeholder={'Peso (em kg)'} onChange={this.setPeso} />
-                        <input type="number" className='bt_altura' value={this.state.altura} placeholder={'Altura (em m)'} onChange={this.setAltura} />
-                        <br />
-                        <input type="submit" className='calc' value="Calcular" disabled onClick={this.setIMC} />
-                        <div className='imcStyle'>
-                            <Output imcState={this.state.imc} />
-                        </div>
-                    </div>
+                <div className="output" >
+
                 </div>
-            );
-        }
+            </div>
+        )
     }
 }
 
-export default Buttons;
+export default Button;
