@@ -1,0 +1,26 @@
+.bg-imc {
+    background-color: rgb(16, 43, 100);
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-imc {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 750px) {
+
+    .bg-imc {
+        width: 70%;
+    }
+
+}
