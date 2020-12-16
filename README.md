@@ -4,16 +4,20 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-1.2-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-1.3-red" alt="versão">
 </p>
 
 Calculadora de IMC simples desenvolvida em React.
 
+---
+
 ## Acesse
 
-Para acessar a calculadora de imc é fácil, apenas clique [aqui](https://alessandrohenriqueramos.github.io/imc/build).
+Para acessar a calculadora de imc é fácil, apenas clique [aqui](https://calculadoradeimc.vercel.app/).
 
-<img src="https://media.giphy.com/media/7C7pNe8NIpbFe/giphy.gif" alt="gif" height="150px" >
+<img src="https://media.giphy.com/media/7C7pNe8NIpbFe/giphy.gif" alt="gif" height="180px" width="180px" >
+
+---
 
 ## Obtendo o código
 
