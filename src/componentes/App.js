@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Buttons from './Buttons.js';
+import Input from './Input.js';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <div className='App'>
                 <h1>Calculadora de IMC</h1>
-                <Buttons />
+                <Input />
             </div>
         );
     }
