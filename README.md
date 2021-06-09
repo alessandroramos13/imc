@@ -27,7 +27,7 @@ Com essas aplicações instaladas, abra o cmd ou o powershell (dependendo do sis
 
 ## Execute
 ```
-git clone https://github.com/alessandrohenriqueramos/imc.git
+git clone https://github.com/alessandroramos13/imc.git
 cd imc
 ```
 No Windows / Mac / Linux:
