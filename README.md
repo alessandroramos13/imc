@@ -15,8 +15,6 @@ Calculadora de IMC simples desenvolvida em React.
 
 Para acessar a calculadora de imc é fácil, apenas clique [aqui](https://calculadoradeimc.vercel.app/).
 
-<img src="https://media.giphy.com/media/7C7pNe8NIpbFe/giphy.gif" alt="gif" height="180px" width="180px" >
-
 ---
 
 ## Obtendo o código
